@@ -1,0 +1,31 @@
+NeuroTrace — Parkinson's Research Web App (Streamlit)
+====================================================
+
+আপনার Kaggle Research ZIP থেকে মূল ৩টি Saved Model, গবেষণার গ্রাফ,
+Research Summary এবং Streamlit Web App তৈরি হয়েছে।
+
+গুরুত্বপূর্ণ: এটি রোগ নির্ণয়ের সফটওয়্যার নয়। ৩টি Dataset-এর রোগী আলাদা;
+অতএব Patient-Level Multimodal Fusion হয়নি। MRI Holdout Accuracy 45.45%।
+
+লোকাল চালানোর সহজ উপায় (Windows):
+1) ZIP Extract করুন।
+2) Python 3.13 Install থাকা নিশ্চিত করুন।
+3) RUN_WINDOWS.bat Double-click করুন; প্রথমবার Internet লাগবে।
+4) Browser-এ Streamlit UI খুলবে (সাধারণত localhost:8501)।
+
+Free Cloud Deployment:
+1) GitHub-এ নতুন Repository তৈরি করুন।
+2) Extract করা Folder-এর সব ফাইল Repository-এর Root-এ Upload করুন।
+3) https://share.streamlit.io → Create App → Repository নির্বাচন করুন।
+4) Main File: app.py | Python: 3.13 | Deploy।
+
+ইনপুট সীমাবদ্ধতা:
+Voice: ২২টি acoustic feature CSV বা manual values।
+Spiral: ১৪টি exact handwriting feature CSV বা manual values।
+MRI: গবেষণা ফলাফল এবং expert-only 1536-feature technical replay।
+Raw WAV, ছবি, tablet TXT অথবা raw MRI (NIfTI) এই App-এ সরাসরি
+পরীক্ষা করা সম্ভব নয়; মূল Research ZIP-এ সংশ্লিষ্ট Reproducible
+Raw-Input Feature Extraction Application ছিল না।
+
+সাবধানতা: ব্যক্তিগত/পরিচয়যোগ্য Medical Record পাবলিক সার্ভারে দেবেন না।
+আরও জানার জন্য README.md পড়ুন।

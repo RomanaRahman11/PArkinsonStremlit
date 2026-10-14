@@ -1,0 +1,17 @@
+{
+  "voice": {
+    "sha256": "835c1b85d6226bb9e48636187f61d1570cdb500504e6274df44bb86e312deaa1",
+    "bytes": 254882,
+    "source": "M02/FINAL_voice_random_forest.joblib"
+  },
+  "spiral": {
+    "sha256": "4bf2fb41110401eea60938b2121e204bd7728fa8fb382fb8978c563a2a16c9c8",
+    "bytes": 327138,
+    "source": "M03/FINAL_spiral_random_forest.joblib"
+  },
+  "mri": {
+    "sha256": "3d09114f687c2e6078a4d92fb3c60ee9e364d9054e0c22e1848b6bb8720e955a",
+    "bytes": 94369,
+    "source": "M04/mri_frozen_model/resnet18_mri_classifier.joblib"
+  }
+}

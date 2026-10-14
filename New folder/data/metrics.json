@@ -1,0 +1,47 @@
+{
+  "voice": {
+    "name": "Voice",
+    "n": 8,
+    "accuracy": 0.875,
+    "balanced_accuracy": 0.75,
+    "roc_auc": 1.0,
+    "sensitivity": 1.0,
+    "specificity": 0.5,
+    "tp": 6,
+    "tn": 1,
+    "fp": 1,
+    "fn": 0,
+    "model": "Random Forest",
+    "caveat": "Only 8 held-out subjects; AUC 1.0 is unstable on such a tiny sample."
+  },
+  "spiral": {
+    "name": "Spiral handwriting",
+    "n": 8,
+    "accuracy": 0.875,
+    "balanced_accuracy": 0.8333333333333334,
+    "roc_auc": 0.8,
+    "sensitivity": 1.0,
+    "specificity": 0.6666666666666666,
+    "tp": 5,
+    "tn": 2,
+    "fp": 1,
+    "fn": 0,
+    "model": "Random Forest",
+    "caveat": "Serious acquisition-timing confounding; participant IDs inferred from files, not independently verified."
+  },
+  "mri": {
+    "name": "Structural MRI",
+    "n": 11,
+    "accuracy": 0.45454545454545453,
+    "balanced_accuracy": 0.5178571428571428,
+    "roc_auc": 0.5357142857142857,
+    "sensitivity": 0.2857142857142857,
+    "specificity": 0.75,
+    "tp": 2,
+    "tn": 3,
+    "fp": 1,
+    "fn": 5,
+    "model": "Frozen ImageNet ResNet18 \u2192 PCA \u2192 Logistic regression",
+    "caveat": "45.45% holdout accuracy; image registration quality not approved. Not a reliable PD discriminator."
+  }
+}
